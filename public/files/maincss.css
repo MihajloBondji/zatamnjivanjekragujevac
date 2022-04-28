@@ -232,7 +232,7 @@ html{
 .logo{
 	position: absolute;
 	top:20%;
-	height:50%;
+	height:60%;
 	left:1vw;
 }
 
@@ -431,17 +431,10 @@ html{
 .col2{
 	position: relative;
 	float: left;
-	width: 15%;
+	width: 50%;
 	padding: 0 0 0 10%;
 	margin:0;
 	height:95%;
-}
-.col3{
-	position: relative;
-	float: left;
-	width: 25%;
-	margin:0 10% 0 0;
-	height:100%;
 }
 
 .footerlogo{
@@ -456,7 +449,7 @@ html{
 	position: relative;
 	float: left;
 	width: 100%;
-	margin-top: 15%;
+	margin-top: 5%;
 	color:rgba(255,255,255, 0.6)
 }
 
@@ -477,6 +470,30 @@ html{
 	justify-content: space-between;
 }
 
+.links{
+	font-size: 2vw;
+	cursor:pointer;
+	color:white;
+	text-decoration: none;
+	transition:color ease 0.2s;
+	margin-left: 10%;
+}
+.social{
+	position:relative;
+	height:2.5vw;
+	cursor:pointer;
+	margin:0;
+	vertical-align:sub;
+	fill:white;
+	transition:fill ease 0.2s;
+}
+.links:hover .social{
+	fill:#ae0000;
+}
+.links:hover{
+	color: #ae0000;
+}
+
 @media screen and (max-width:1000px){
 	.burger{
 		display:block;
@@ -484,6 +501,8 @@ html{
 
 	.linksHolder{
 		display:none;
+		
+		padding: 3vh 0;
 	}
 
 	.headerLinks{
@@ -565,8 +584,8 @@ html{
 
 	.scSlider{
 		top:45vw;
-		width: 80%;
-		left:10%;
+		width: 90%;
+		left:5%;
 	}
 
 	.showcase{
@@ -605,6 +624,28 @@ html{
 		margin:5%;
 		width: 70%;
 		float: left;
+	}
+
+	.kontaktiraj{
+		font-size: 2em;
+	}
+
+	.finalfooter{
+		font-size: 1em;
+	}
+
+	.kontakt{
+		height: 25vh;
+	}
+
+	.kontaktTitle{
+		margin-top: 10%;
+		font-size: 2em;
+	}
+
+	.footerlogo{
+		width:95%;
+		margin:20% 2.5%;
 	}
 }
 
