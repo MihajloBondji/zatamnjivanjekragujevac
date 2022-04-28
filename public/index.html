@@ -1,89 +1,205 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+	  <title>Zatamnjivanje stakala</title>
+	  <meta charset="utf-8" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	  <link rel="icon" type="image/x-icon" href="files/favicon.ico">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.6.11/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.6.11/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/9.6.11/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/9.6.11/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.6.11/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/9.6.11/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/9.6.11/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/9.6.11/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.6.11/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.6.11/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+	  <link rel="stylesheet" href="files/maincss.css" />
+	  
+	  <script src="files/js.js"></script>
+	  
+		<meta property="og:title" content="Zatamnjivanje stakala">
+		<meta property="og:description" content="Kvalitetno, brzo i jednostavno zatamnjivanje stakala!">
+		<meta property="og:image" content="">
+		<meta property="og:url" content="">
+		<meta name="twitter:card" content="summary_large_image">
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
+		<meta property="og:site_name" content="Zatamnjivanje stakala">
+		<meta name="twitter:image:alt" content="Kvalitetno, brzo i jednostavno zatamnjivanje stakala!">
+
   </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+  <body onload="setload()">
+	<div class="main" id="main">
+		<div class="home" id="home">
+			<div class="about homeproducts">
+				<a href="#automobiliDiv">
+					<div class="oneside">
+						<img src="files/automobilipozadina.png" class="onesideimg">
+						<img src="files/auto.svg" class="onesidesvg">
+						<div class="onesidetext">
+							Zatamnjivanje stakala automobila<br>
+							Garancija za atest u Srbiji i EU<br>
+							10 godina garancija<br>
+							Folije pružaju prijatnu vožnju u toplim danima, obezbeđujući intimu i sigurnost
+						</div>
+						<a href="#automobiliDiv">
+						<div class="moreinfo">
+							VIŠE INFORMACIJA
+						</div>
+				</a>
+				</div>
+				</a>
+				<a href="#objectsDiv">
+					<div class="oneside">
+						<img src="files/objekti2.jpg" class="onesideimg">
+						<a href="#objectsDiv"><img src="files/objekti.svg" class="onesidesvg"></a>
+						<div class="onesidetext">
+							Zatamnjivanje stakala u objektima<br>
+							Folije za sve vrste objekata<br>
+							Dekorativne, peskarene, reflektujuće<br>
+							nereflektujuće, anti grafit, sigurnosne zaštitne folije<br>
+							UV providne protiv bleđenja
+						</div>
+						<a href="#objectsDiv">
+						<div class="moreinfo">
+							VIŠE INFORMACIJA
+						</div>
+						</a>
+					</div>
+				</a>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+				</div>
+			</div>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
+			<div class="about">
+				<span id="automobiliDiv" style="position:absolute;top:-90px;"></span>
+				
+				<div class="aboutCars">
+					<div class="aboutCarsTitle">
+						ZATAMNJIVANJE AUTO STAKALA
+					</div>
+					<div class="aboutCarsText">
+						Armolan folije za zatamnjivanje stakala automobila I objekata folijama visokog kvaliteta mogu se koristiti na staklima bilo kog automobila. Primarno dejstvo Armolan folije za stakla je smanjivanje toplote koja putem sunčevih zraka ulazi u automobile i objekte. Posebna funkcija ovih folija za auta, autobuse I objekte je u tome što regulišu toplotu i neugodno blještavilo sunca. Folija za zatamnjivanje stakala obezbjeđuju dodatnu sigurnost i štite privatnosti ljudi u automobile, autobusu I objektu. Različiti tipovi i boje folija doprinose i estetskoj vrednosti vozila I svih stambenih površina. Specijalne visoko kvalitetne folije razvijene za prednje šoferšajbne bile su prekretnica u sun control industriji. Sada je dostupna paleta providnih raznih nano-keramičkih I metaliziranih folija samo za potrebe prednje šoferke.
+					</div>
+					<img src="files/redcar.jpg" class="aboutCarsPhoto">
+				</div>
+
+				<div class="divTitle">
+					SIMULACIJA ZATAMNJENJA AUTO STAKLA POSLE UGRADNJE FOLIJE ZA ZATAMNJENJE
+				</div>
+				<div class="showcase">
+					<img src="files/sedan2.png" class="scPhoto" id="scPhotoMask">
+					<span class="scPhotoTint" id="scPhotoTint"></span>
+					<img src="files/sedan1.png" class="scPhoto" id="scPhoto">
+					
+					<div class="scSlider">
+						<label class="container" id="con1">30%
+							<input type="radio" name="radio" onchange="changeOpacity(0.3)">
+							<span class="checkmark"></span>
+						  </label>
+						  <label class="container" id="con2">50%
+							<input type="radio" checked="checked" name="radio" onchange="changeOpacity(0.5)">
+							<span class="checkmark"></span>
+						  </label>
+						  <label class="container" id="con3">60%
+							<input type="radio" name="radio" onchange="changeOpacity(0.6)">
+							<span class="checkmark"></span>
+						  </label>
+						  <label class="container" id="con4">70%
+							<input type="radio" name="radio" onchange="changeOpacity(0.7)">
+							<span class="checkmark"></span>
+						  </label>
+						  <label class="container" id="con5">80%
+							<input type="radio" name="radio" onchange="changeOpacity(0.8)">
+							<span class="checkmark"></span>
+						  </label>
+						  <label class="container" id="con6">85%
+							<input type="radio" name="radio" onchange="changeOpacity(0.85)">
+							<span class="checkmark"></span>
+						  </label>
+						  <label class="container" id="con7">95%
+							<input type="radio" name="radio" onchange="changeOpacity(0.95)">
+							<span class="checkmark"></span>
+						  </label>
+					<a href="#kontakt">
+						<div class="kontaktiraj">
+							Kontaktirajte nas!
+						</div>
+					</a>
+					</div>
+				</div>
+
+				<div class="aboutObjects">
+					<span id="objectsDiv" style="position:absolute;top:-90px;"></span>
+					<div class="aboutObjectsTitle">
+						FOLIJE ZA STAKLA OBJEKATA
+					</div>
+					<div class="aboutObjectsText">
+						Folije se koriste i za private prostorije: zatamnjivanje stanova, kuća, vikendica, dnevnih boravaka, kupatila, staklenih terasa, i svih ostalih staklenih površina za ulepšavanje, intimu, bebednost (anti-vandal).
+						<br><br>
+						Kao I za poslovne prostorije: -Hoteli, restorani, apartmani, saloni, kafići, muzeji, apoteke, butici, kancelarije, magacini.
+					</div>
+					<img src="files/objects.png" class="aboutObjectsPhoto">
+				</div>
+				
+				<div class="kontakt">
+					<span id="kontakt" style="position:absolute;top:-90px;"></span>
+					<div class="col1">
+						<img src="files/logo3.png" class="footerlogo">
+					</div>
+					<div class="col2">
+						<span class="kontaktTitle">Kontakt</span>
+					</div>
+					<div class="col3">
+						
+					</div>
+					<br><br><br><br><br>
+				</div>
+
+				<div class="finalfooter">
+					<span>Ovaj sajt ne koristi kolačiće :)</span>
+					<span><a href="https://mihajlobondji.com">Created by: Mihajlo Bonđi</a></span>
+				</div>
+
+			</div>
+		</div>
+		
+	</div>
+    <div class="header" id="header">
+		<span class="gradient"></span>
+		<a href="#"><img class="logo" src="files/logo3.png" id="headerLogo"></a>
+		<span class="linksHolder" id="linksHolder">
+			<span class="newline">
+				<a class="headerLinks" onclick="setTimeout('menu()',300);" href="#" onclick="window.scrollTop();">
+					<span id="homehead">POČETNA</span>
+				</a>
+			</span>
+			<span class="newline">
+				<a class="headerLinks" onclick="setTimeout('menu()',300);" href="#automobiliDiv">
+					<span id="homehead">AUTOMOBILI</span>
+				</a>
+			</span>
+			<span class="newline">
+				<a class="headerLinks" onclick="setTimeout('menu()',300);" href="#objectsDiv">
+					<span id="homehead">OBJEKTI</span>
+				</a>
+			</span>
+			<span class="newline">
+				<a class="headerLinks" onclick="setTimeout('menu()',300);" href="#" onclick="window.scrollTop();">
+					<span id="homehead">GALERIJA</span>
+				</a>
+			</span>
+			<span class="newline">
+				<a class="headerLinks" onclick="setTimeout('menu()',300);" href="#kontakt">
+					<span id="homehead">KONTAKT</span>
+				</a>
+			</span>
+
+		</span>
+		<div class="burger" onclick="menu()" id="burger">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
+		</div>
+	</div>
+	<script>
+		window.addEventListener("scroll", scrollScript);
+		window.addEventListener('click', function(e){
+		 if (!(document.getElementById('header').contains(e.target)))
+		checkmenu();
+});
+	</script>
   </body>
 </html>
