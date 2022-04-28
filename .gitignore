@@ -65,5 +65,4 @@ node_modules/
 # dotenv environment variables file
 .env
 .firebaserc
-.github/workflows/firebase-hosting-merge.yml
 firebase.json
