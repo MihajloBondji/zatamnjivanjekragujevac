@@ -43,7 +43,7 @@
 				</a>
 				<a href="#objectsDiv">
 					<div class="oneside">
-						<img src="files/objekti2.jpg" class="onesideimg">
+						<img src="files/objekti2.jpeg" class="onesideimg">
 						<a href="#objectsDiv"><img src="files/objekti.svg" class="onesidesvg"></a>
 						<div class="onesidetext">
 							Zatamnjivanje stakala u objektima<br>
@@ -73,7 +73,7 @@
 					<div class="aboutCarsText">
 						Armolan folije za zatamnjivanje stakala automobila I objekata folijama visokog kvaliteta mogu se koristiti na staklima bilo kog automobila. Primarno dejstvo Armolan folije za stakla je smanjivanje toplote koja putem sunčevih zraka ulazi u automobile i objekte. Posebna funkcija ovih folija za auta, autobuse I objekte je u tome što regulišu toplotu i neugodno blještavilo sunca. Folija za zatamnjivanje stakala obezbjeđuju dodatnu sigurnost i štite privatnosti ljudi u automobile, autobusu I objektu. Različiti tipovi i boje folija doprinose i estetskoj vrednosti vozila I svih stambenih površina. Specijalne visoko kvalitetne folije razvijene za prednje šoferšajbne bile su prekretnica u sun control industriji. Sada je dostupna paleta providnih raznih nano-keramičkih I metaliziranih folija samo za potrebe prednje šoferke.
 					</div>
-					<img src="files/redcar.jpg" class="aboutCarsPhoto">
+					<img src="files/redcar.jpeg" class="aboutCarsPhoto">
 				</div>
 
 				<div class="divTitle">
@@ -134,6 +134,29 @@
 					<img src="files/objects.png" class="aboutObjectsPhoto">
 				</div>
 				
+				<div class="gallery">
+					<span id="galerija" style="position:absolute;top:-90px;"></span>
+					<span class="leftPhoto"><img src="" id="leftPhoto" class="galleryPhoto"></span>
+					<span class="rightPhoto"><img src="" id="rightPhoto" class="galleryPhoto"></span>
+					<span class="mainPhoto"><img src="" id="mainPhoto" class="galleryPhoto"></span>
+					<span class="photosHolder">
+						<span class="miniphoto" id="mp0" onclick="changePhoto(0)"><img src="galerija/0.jpeg" class="galleryMiniPhoto"></span>
+						<span class="miniphoto" id="mp1" onclick="changePhoto(1)"><img src="galerija/1.jpeg" class="galleryMiniPhoto"></span>
+						<span class="miniphoto" id="mp2" onclick="changePhoto(2)"><img src="galerija/2.jpeg" class="galleryMiniPhoto"></span>
+						<span class="miniphoto" id="mp3" onclick="changePhoto(3)"><img src="galerija/3.jpeg" class="galleryMiniPhoto"></span>
+						<span class="miniphoto" id="mp4" onclick="changePhoto(4)"><img src="galerija/4.jpeg" class="galleryMiniPhoto"></span>
+						<span class="miniphoto" id="mp5" onclick="changePhoto(5)"><img src="galerija/5.jpeg" class="galleryMiniPhoto"></span>
+						<span class="miniphoto" id="mp6" onclick="changePhoto(6)"><img src="galerija/6.jpeg" class="galleryMiniPhoto"></span>
+						<span class="miniphoto" id="mp7" onclick="changePhoto(7)"><img src="galerija/7.jpeg" class="galleryMiniPhoto"></span>
+						<span class="miniphoto" id="mp8" onclick="changePhoto(8)"><img src="galerija/8.jpeg" class="galleryMiniPhoto"></span>
+						<span class="miniphoto" id="mp9" onclick="changePhoto(9)"><img src="galerija/9.jpeg" class="galleryMiniPhoto"></span>
+						<span class="miniphoto" id="mp10" onclick="changePhoto(10)"><img src="galerija/10.jpeg" class="galleryMiniPhoto"></span>
+						<span class="miniphoto" id="mp11" onclick="changePhoto(11)"><img src="galerija/11.jpeg" class="galleryMiniPhoto"></span>
+					</span>
+					<span class="leftChange" onclick="changePhoto(-1)"></span>
+					<span class="rightChange" onclick="changePhoto(-2)"></span>
+				</div>
+
 				<div class="kontakt">
 					<span id="kontakt" style="position:absolute;top:-90px;"></span>
 					<div class="col1">
@@ -151,7 +174,6 @@
 					<div class="col3">
 						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16580.282875757846!2d20.862124125392906!3d44.008079698241744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475721bc8c2ebd15%3A0x984e9a9e059df504!2sZATAMNJIVANJE%20STAKALA%20KRAGUJEVAC%20-%20ARMOLAN%20FOLIJE!5e0!3m2!1sen!2srs!4v1651244233402!5m2!1sen!2srs" width="100%" height="100%" style="border:solid 0.3vw #444;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 					</div>
-					<br><br><br><br><br>
 				</div>
 
 				<div class="finalfooter">
@@ -182,7 +204,7 @@
 				</a>
 			</span>
 			<span class="newline">
-				<a class="headerLinks" onclick="setTimeout('menu()',300);" href="#" onclick="window.scrollTop();">
+				<a class="headerLinks" onclick="setTimeout('menu()',300);" href="#galerija">
 					<span id="homehead">GALERIJA</span>
 				</a>
 			</span>

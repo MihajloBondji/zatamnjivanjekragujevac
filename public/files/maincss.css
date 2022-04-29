@@ -343,6 +343,20 @@ html{
 	text-align: left;
 }
 
+
+.gallery{
+	width:100%;
+	position: relative;
+	float: left;
+	margin: 0;
+	padding-bottom: 3%;
+	height: auto;
+	background: #ddd;
+	color:white;
+	height: 40vw;
+	text-align: left;
+}
+
 .aboutCarsTitle{
 	position: relative;
 	float: left;
@@ -510,6 +524,111 @@ html{
 	color: #ae0000;
 }
 
+.leftPhoto{
+	position: absolute;
+	top:9.5vw;
+	left:15.4vw;
+	height: 13.5vw;
+	width:21vw;
+	text-align: center;
+	overflow: hidden;
+	opacity: 0.3;
+}
+
+.mainPhoto{
+	position: absolute;
+	top:3vw;
+	left:28.4vw;
+	height: 27vw;
+	width:42vw;
+	text-align: center;
+	overflow: hidden;
+}
+
+.rightPhoto{
+	position: absolute;
+	top:9.5vw;
+	right:15.4vw;
+	height: 13.5vw;
+	width:21vw;
+	text-align: center;
+	overflow: hidden;
+	opacity: 0.3;
+}
+
+.leftChange{
+	position: absolute;
+	top:11.25vw;
+	left:5vw;
+	width: 0; 
+	height: 0; 
+	border-top: 5vw solid transparent;
+	border-bottom: 5vw solid transparent; 
+	border-right:5vw solid #444; 
+	cursor: pointer;
+}
+
+.leftChange:hover{
+	border-top: 5vw solid transparent;
+	border-bottom: 5vw solid transparent; 
+	border-right:5vw solid #ae0000; 
+}
+
+.rightChange{
+	position: absolute;
+	top:11.25vw;
+	right:5vw;
+	width: 0; 
+	height: 0; 
+	border-top: 5vw solid transparent;
+	border-bottom: 5vw solid transparent; 
+	border-left:5vw solid #444; 
+	cursor: pointer;
+}
+
+.rightChange:hover{
+	border-top: 5vw solid transparent;
+	border-bottom: 5vw solid transparent; 
+	border-left:5vw solid #ae0000; 
+}
+
+
+.photosHolder{
+	position: absolute;
+	top:33vw;
+	left:5vw;
+	width: 90vw;
+	height: 6vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.miniphoto{
+	width:5vw;
+	height: 5vw;
+	margin: 0 1vw;
+	border: solid 0.3vw #444;
+	border-radius: 6vw;
+	cursor: pointer;
+	text-align: center;
+	overflow: hidden;
+}
+
+.miniphoto:hover{
+	border-color: #ae0000 !important;
+}
+
+.galleryPhoto{
+	height:100%;
+	margin:0 auto;
+}
+
+.galleryMiniPhoto{
+	height:5.6vw;
+	width:5.6vw;
+	margin:0 auto;
+}
 @media screen and (max-width:1000px){
 	.burger{
 		display:block;
@@ -761,3 +880,4 @@ html{
 	  border-radius: 50%;
 	  background: white;
   }
+

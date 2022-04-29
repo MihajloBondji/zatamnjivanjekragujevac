@@ -17,7 +17,8 @@ function changeOpacity(op){
 }
 
 function setload(){
-	
+	changePhoto(0);
+  document.getElementById("mp0").style.borderColor="#ae0000";
 }
 
 var aut=0,bod=0,auto=0;
@@ -54,3 +55,19 @@ var scrollScript = function(){
   }
 }
 }
+
+var currentPhoto=0;
+
+function changePhoto(photoId){
+  if(photoId==-2)
+    photoId=(currentPhoto+1)%12;
+  else if(photoId==-1)
+  photoId=(currentPhoto+11)%12;
+  leftPhoto.src="galerija/"+(photoId+11)%12+".jpeg";
+  mainPhoto.src="galerija/"+photoId+".jpeg";
+  rightPhoto.src="galerija/"+(photoId+1)%12+".jpeg";
+  document.getElementById("mp"+photoId).style.borderColor="#ae0000";
+  document.getElementById("mp"+currentPhoto).style.borderColor="#444";
+  currentPhoto=photoId;
+}
+
