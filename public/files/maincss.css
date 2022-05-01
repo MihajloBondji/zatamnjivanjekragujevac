@@ -293,7 +293,7 @@ html{
 	width: auto;
 	max-width: fit-content;
 	height: auto;
-	padding: 0.5vw;
+	padding: 0.5vw 3vw;
 	border: solid white 0.3vw;
 	border-radius: 50px;
 	color: white;
@@ -343,6 +343,10 @@ html{
 	text-align: left;
 }
 
+.spanTop{
+	position:absolute;
+	top:-90px;
+}
 
 .gallery{
 	width:100%;
@@ -806,6 +810,14 @@ html{
 
 	.displayNone{
 		display: none;
+	}
+
+	.spanTop{
+		top:-50px;
+	}
+
+	.main{
+		top:50px;
 	}
 
 }
