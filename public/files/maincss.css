@@ -367,6 +367,7 @@ html{
 	padding: 0 2vw;
 	border-radius: 5vw;
 	cursor: pointer;
+	color: white !important;
 }
 
 .morePhotos:hover{
@@ -822,10 +823,11 @@ html{
 
 	.finalfooter{
 		font-size: 1em;
+		height: 25px;
 	}
 
 	.kontakt{
-		height: 10vh;
+		height: 13vh;
 	}
 
 	.kontaktTitle{
