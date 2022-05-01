@@ -565,6 +565,15 @@ html{
 	width:42vw;
 	text-align: center;
 	overflow: hidden;
+	cursor: zoom-in;
+	transition: ease 0.3s;
+}
+
+.mainPhoto:hover{
+	top:0;
+	left:18.5vw;
+	height: 40.5vw;
+	width:63vw;
 }
 
 .rightPhoto{
@@ -964,6 +973,13 @@ html{
 	}
 
 	.mainPhoto{
+		top:20vw;
+		width:75vw;
+		left:12.5vw;
+		height: 48vw;
+	}
+
+	.mainPhoto:hover{
 		top:20vw;
 		width:75vw;
 		left:12.5vw;
