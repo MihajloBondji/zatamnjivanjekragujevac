@@ -361,6 +361,94 @@ html{
 	text-align: center;
 }
 
+.pricingtTitle{
+	position: relative;
+	float: left;
+	width: 94%;
+	padding: 3%;
+	font-size: 2em;
+	text-align: center;
+}
+
+.pricingCars{
+	width:100%;
+	position: relative;
+	float: left;
+	margin: 0;
+	padding-bottom: 3%;
+	height: auto;
+	background: #ae0000;
+	color:white;
+	text-align: center;
+	border-bottom: double #333 1vw;
+
+}
+.pricingCarsTypes{
+	height: max-content;
+	position: relative;
+	float: left;
+	width: 94%;
+	padding: 3%;
+	font-size: 1em;
+	text-transform: uppercase;
+}
+.pricingCars-table{
+	position: static;
+	width: auto;
+	margin: auto;
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+.col{
+	flex:20%;
+	padding: 5px;
+	box-sizing: border-box;
+	font-size: 1em;
+	font-family:oswald;
+}
+.table{
+	position: relative;
+	overflow: hidden;
+
+}
+.priceDescription{
+	font-size: 0.5em;
+	display: block;
+}
+.price{
+	font-size: 1em;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.pricingObjects{
+	width:100%;
+	position: relative;
+	float: left;
+	margin: 0;
+	padding-bottom: 3%;
+	height: auto;
+	background: #394664;
+	color:white;
+}
+.pricingObjectsText{
+	position: relative;
+	font-size: 0.75em;
+	text-align: left;
+}
+.pricingObjectsText ul {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	padding:0 5%;
+}
+
+.pricingObjectsText ul li {
+	list-style: none;
+}
+
 .morePhotos{
 	position: absolute;
 	top:47vw;
