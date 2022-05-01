@@ -233,7 +233,7 @@ html{
 	position: absolute;
 	top:20%;
 	height:60%;
-	left:1vw;
+	left:3vw;
 }
 
 .homeproducts{
@@ -353,8 +353,25 @@ html{
 	height: auto;
 	background: #ddd;
 	color:white;
-	height: 40vw;
-	text-align: left;
+	height: 50vw;
+	text-align: center;
+}
+
+.morePhotos{
+	position: absolute;
+	top:47vw;
+	font-size: 2vw;
+	transform: translate(-50%,0);
+	background-color: #394664;
+	border: solid 0.3vw white;
+	padding: 0 2vw;
+	border-radius: 5vw;
+	cursor: pointer;
+}
+
+.morePhotos:hover{
+	border-color:#ae0000;
+	text-decoration:underline;
 }
 
 .aboutCarsTitle{
@@ -463,8 +480,8 @@ html{
 .footerlogo{
 	position: relative;
 	float: left;
-	width: 90%;
-	margin:10% 10% 10% 0;
+	width: 50%;
+	margin:10% 50% 10% 0;
 	opacity: 0.6;
 }
 
@@ -526,8 +543,8 @@ html{
 
 .leftPhoto{
 	position: absolute;
-	top:9.5vw;
-	left:15.4vw;
+	top:14.5vw;
+	left:15vw;
 	height: 13.5vw;
 	width:21vw;
 	text-align: center;
@@ -537,8 +554,8 @@ html{
 
 .mainPhoto{
 	position: absolute;
-	top:3vw;
-	left:28.4vw;
+	top:8vw;
+	left:29vw;
 	height: 27vw;
 	width:42vw;
 	text-align: center;
@@ -547,8 +564,8 @@ html{
 
 .rightPhoto{
 	position: absolute;
-	top:9.5vw;
-	right:15.4vw;
+	top:14.5vw;
+	right:15vw;
 	height: 13.5vw;
 	width:21vw;
 	text-align: center;
@@ -558,7 +575,7 @@ html{
 
 .leftChange{
 	position: absolute;
-	top:11.25vw;
+	top:16.25vw;
 	left:5vw;
 	width: 0; 
 	height: 0; 
@@ -576,7 +593,7 @@ html{
 
 .rightChange{
 	position: absolute;
-	top:11.25vw;
+	top:16.25vw;
 	right:5vw;
 	width: 0; 
 	height: 0; 
@@ -595,7 +612,7 @@ html{
 
 .photosHolder{
 	position: absolute;
-	top:33vw;
+	top:38vw;
 	left:5vw;
 	width: 90vw;
 	height: 6vw;
@@ -627,6 +644,45 @@ html{
 	height:5.6vw;
 	width:5.6vw;
 	margin:0 auto;
+}
+
+.changeGallery{
+	position: absolute;
+	top:4vw;
+	width:20vw;
+	left:39.7vw;
+	font-size: 1.5vw;
+	border:solid 0.15vw #fff;
+	border-radius: 4vw;
+	color:#444;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+.oneOption{
+	margin:0;
+	padding: 0 10%;
+	width:30%;
+	cursor: pointer;
+}
+
+.oneOption:hover{
+	color:#394664;
+}
+
+.selectedOption{
+	background-color: #394664;
+	color: white;
+	border-radius: 4vw;
+}
+
+.selectedOption:hover{
+	color:white;
+}
+
+.footerLink:hover{
+	text-decoration: underline;
 }
 @media screen and (max-width:1000px){
 	.burger{
@@ -808,6 +864,55 @@ html{
 		padding: 5% 0;
 		margin:0;
 		height:75%;
+	}
+
+	.gallery{
+		height:95vw;
+	}
+
+	.changeGallery{
+		top:8vw;
+		font-size: 4vw;
+		width:50vw;
+		left:25vw;
+	}
+
+	.mainPhoto{
+		top:20vw;
+		width:75vw;
+		left:12.5vw;
+		height: 48vw;
+	}
+
+	.leftPhoto{
+		top:36.5vw;
+		height:15vw;
+		left:10vw;
+	}
+
+	.rightPhoto{
+		top:36.5vw;
+		height:15vw;
+		right: 10vw;
+	}
+
+	.leftChange{
+		top:40vw;
+		left:2vw;
+	}
+
+	.rightChange{
+		top:40vw;
+		right:2vw;
+	}
+
+	.photosHolder{
+		top:75vw
+	}
+
+	.morePhotos{
+		top:85vw;
+		font-size: 4vw;
 	}
 }
 

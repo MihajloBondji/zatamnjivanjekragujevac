@@ -55,7 +55,7 @@ var scrollScript = function(){
   }
 }
 }
-
+var forobjects="";
 var currentPhoto=0;
 
 function changePhoto(photoId){
@@ -63,11 +63,24 @@ function changePhoto(photoId){
     photoId=(currentPhoto+1)%12;
   else if(photoId==-1)
   photoId=(currentPhoto+11)%12;
-  leftPhoto.src="galerija/"+(photoId+11)%12+".jpeg";
-  mainPhoto.src="galerija/"+photoId+".jpeg";
-  rightPhoto.src="galerija/"+(photoId+1)%12+".jpeg";
+  leftPhoto.src="galerija/"+forobjects+(photoId+11)%12+".jpeg";
+  mainPhoto.src="galerija/"+forobjects+photoId+".jpeg";
+  rightPhoto.src="galerija/"+forobjects+(photoId+1)%12+".jpeg";
   document.getElementById("mp"+photoId).style.borderColor="#ae0000";
   document.getElementById("mp"+currentPhoto).style.borderColor="#444";
   currentPhoto=photoId;
 }
+var currentGallery=0;
 
+function changeGallery(){
+    autgal.classList.toggle("selectedOption");
+    objgal.classList.toggle("selectedOption");
+    if(currentGallery)
+    forobjects="";
+    else forobjects="o";
+    for(let i=0;i<12;i++){
+      document.getElementById("mpp"+i).src="galerija/"+forobjects+i+".jpeg";
+    }
+    changePhoto(0);
+    currentGallery=!currentGallery;
+}
