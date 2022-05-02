@@ -361,6 +361,13 @@ html{
 	text-align: center;
 }
 
+.pricing{
+	width:100%;
+	position: relative;
+	float: left;
+	margin: 0;
+}
+
 .pricingtTitle{
 	position: relative;
 	float: left;
@@ -427,11 +434,11 @@ html{
 }
 
 .pricingObjects{
-	width:100%;
+	width:90%;
 	position: relative;
 	float: left;
 	margin: 0;
-	padding-bottom: 3%;
+	padding:0 5% 3% 5%;
 	height: auto;
 	background: #394664;
 	color:white;
@@ -850,7 +857,7 @@ html{
   }
 
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:1250px){
 	.burger{
 		display:block;
 	}
@@ -995,7 +1002,7 @@ html{
 	}
 
 	.finalfooter{
-		font-size: 1em;
+		font-size: 0.7em;
 		height: 25px;
 	}
 
