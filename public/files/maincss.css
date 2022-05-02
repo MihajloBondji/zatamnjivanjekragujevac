@@ -398,6 +398,7 @@ html{
 	margin: auto;
 	flex-wrap: wrap;
 	display: flex;
+	align-items: flex-end;
 	justify-content: center;
 	text-align: center;
 }
@@ -407,10 +408,12 @@ html{
 	box-sizing: border-box;
 	font-size: 1em;
 	font-family:oswald;
+
 }
 .table{
 	position: relative;
 	overflow: hidden;
+	bottom: 10px;
 
 }
 .priceDescription{
