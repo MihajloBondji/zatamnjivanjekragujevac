@@ -481,7 +481,6 @@ html{
 	text-align: center;
 }
 .atestText{
-	width:100%;
 	position: relative;
 	float: left;
 	margin: 0;
@@ -498,7 +497,7 @@ html{
 	padding:0;
 	margin-top: 5%;
 	margin-bottom: 5%;
-	margin-right: 7%;
+	margin-right: 2%;
 }
 .atestTitleImportant{
 	border-top: double #333 1vw;
