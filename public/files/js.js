@@ -70,6 +70,20 @@ function changePhoto(photoId){
   document.getElementById("mp"+currentPhoto).style.borderColor="#444";
   currentPhoto=photoId;
 }
+
+var currentPhotoA=0;
+function changePhoto1(photoIdA){
+  if(photoIdA==-2)
+  photoIdA=(currentPhotoA+1)%8;
+  else if(photoIdA==-1)
+  photoIdA=(currentPhotoA+7)%8;
+  leftPhotoA.src="atestgalerija/"+forobjects+(photoIdA+7)%8+".jpg";
+  mainPhotoA.src="atestgalerija/"+forobjects+photoIdA+".jpg";
+  rightPhotoA.src="atestgalerija/"+forobjects+(photoIdA+1)%8+".jpg";
+  document.getElementById("ap"+photoIdA).style.borderColor="#ae0000";
+  document.getElementById("ap"+photoIdA).style.borderColor="#444";
+  currentPhotoA=photoIdA;
+}
 var currentGallery=0;
 
 function changeGallery(){
