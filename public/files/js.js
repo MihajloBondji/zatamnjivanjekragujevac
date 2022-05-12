@@ -20,6 +20,7 @@ function setload(){
   changePhoto1(0);
 	changePhoto(0);
   document.getElementById("mp0").style.borderColor="#ae0000";
+  document.getElementById("ap0").style.borderColor="#ae0000";
 }
 
 var aut=0,bod=0,auto=0;
