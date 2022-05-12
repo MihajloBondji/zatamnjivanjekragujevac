@@ -17,6 +17,7 @@ function changeOpacity(op){
 }
 
 function setload(){
+  changePhoto1(0);
 	changePhoto(0);
   document.getElementById("mp0").style.borderColor="#ae0000";
 }
