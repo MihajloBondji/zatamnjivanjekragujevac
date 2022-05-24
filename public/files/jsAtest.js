@@ -19,3 +19,16 @@ function setload(){
     changePhoto1(0);
     document.getElementById("ap0").style.borderColor="#ae0000";
 }
+
+var menuop=0;
+function menu() {
+  burger.classList.toggle("change");
+  linksHolder.classList.toggle("changeHolder");
+  headerLogo.classList.toggle("displayNone");
+  menuop=!menuop;
+}
+
+function checkmenu(){
+	if(menuop==1)
+	menu();
+}

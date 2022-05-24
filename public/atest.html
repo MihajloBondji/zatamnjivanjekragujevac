@@ -195,6 +195,12 @@
             <div class="bar3"></div>
         </div>
     </div>
+	<script>
+		window.addEventListener('click', function (e) {
+			if (!(document.getElementById('header').contains(e.target)))
+				checkmenu();
+		});
+	</script>
 </body>
 
 </html>
